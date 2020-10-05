@@ -85,8 +85,6 @@ extension SecondViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "myCell", for: indexPath) as! CollectionViewCell
         let movie = model[indexPath.row]
-        
-        
         cell.starImageViewOutlet.image = UIImage(named: "goldStar")
         cell.ratingLabelOutlet.text = movie.ratingLabel
         cell.filmNameLabelOutlet.text = movie.title
